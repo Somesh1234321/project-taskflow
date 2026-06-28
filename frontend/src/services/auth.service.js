@@ -1,25 +1,21 @@
-import api from '../api/axios';
+import api from "../api/axios";
 
-export const authService = {
-  async register(name, email, password) {
-    const response = await api.post('/auth/signup', { name, email, password });
-    return response.data;
-  },
-
-  async login(email, password) {
-    const response = await api.post('/auth/login', { email, password });
-    return response.data;
-  },
-
-  async logout() {
-    const response = await api.post('/auth/logout');
-    return response.data;
-  },
-
-  async getCurrentUser() {
-    const response = await api.get('/auth/me');
-    return response.data;
-  }
+export const registerUser = async (data) => {
+  const response = await api.post("/auth/register", data);
+  return response.data;
 };
 
-export default authService;
+export const loginUser = async (data) => {
+  const response = await api.post("/auth/login", data);
+  return response.data;
+};
+
+export const getCurrentUser = async () => {
+  const response = await api.get("/auth/me");
+  return response.data;
+};
+
+export const logoutUser = async () => {
+  const response = await api.post("/auth/logout");
+  return response.data;
+};

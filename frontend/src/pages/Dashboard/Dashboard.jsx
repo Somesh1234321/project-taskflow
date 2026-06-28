@@ -95,7 +95,7 @@ const Dashboard = () => {
 
         {/* Search (Left) */}
         <div className="flex-1 max-w-md relative group hidden sm:block">
-          <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors text-sm">search</span>
+          <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors text-sm">🔎</span>
           <input 
             className="w-full bg-[#0e1a10] border border-outline-variant rounded-lg pl-10 pr-4 py-2 font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder:text-on-surface-variant/50" 
             placeholder="Search projects, tasks, or members..." 
@@ -115,7 +115,7 @@ const Dashboard = () => {
             <span className="absolute top-0 right-0 w-2 h-2 bg-primary-container rounded-full animate-pulse"></span>
           </button>
           <button className="text-on-surface-variant hover:text-primary transition-all" onClick={() => navigate('/settings')}>
-            <span className="material-symbols-outlined">account_circle</span>
+            <span className="material-symbols-outlined">Account</span>
           </button>
         </div>
       </header>
@@ -129,7 +129,7 @@ const Dashboard = () => {
             <h2 className="font-headline-xl text-headline-xl text-on-surface">Good morning, {user?.name || 'Developer'}</h2>
           </div>
           <div className="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md bg-surface-container-low px-4 py-2 rounded-lg border border-outline-variant">
-            <span className="material-symbols-outlined text-sm text-primary">calendar_today</span>
+            <span className="material-symbols-outlined text-sm text-primary">🗓️</span>
             <span>{getFormattedDate()}</span>
           </div>
         </div>
@@ -153,7 +153,7 @@ const Dashboard = () => {
                 </div>
                 <div className="font-headline-xl text-headline-xl text-on-surface mb-1">{stats.activeTasks}</div>
                 <div className="flex items-center gap-1 font-code-sm text-code-sm text-primary">
-                  <span className="material-symbols-outlined text-[14px]">trending_up</span>
+                  <span className="material-symbols-outlined text-[14px]"></span>
                   <span>Tasks needing completion</span>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const Dashboard = () => {
                   {stats.velocity}<span className="text-headline-lg text-on-surface-variant ml-1">pts</span>
                 </div>
                 <div className="flex items-center gap-1 font-code-sm text-code-sm text-on-surface-variant">
-                  <span className="material-symbols-outlined text-[14px]">horizontal_rule</span>
+                  <span className="material-symbols-outlined text-[14px]"></span>
                   <span>On track</span>
                 </div>
               </div>
@@ -183,7 +183,7 @@ const Dashboard = () => {
                 </div>
                 <div className="font-headline-xl text-headline-xl text-on-surface mb-1">{stats.blockers}</div>
                 <div className="flex items-center gap-1 font-code-sm text-code-sm text-error">
-                  <span className="material-symbols-outlined text-[14px]">priority_high</span>
+                  <span className="material-symbols-outlined text-[14px]"></span>
                   <span>High priority issues</span>
                 </div>
               </div>
@@ -213,7 +213,7 @@ const Dashboard = () => {
                       >
                         <div className="flex justify-between items-start mb-4">
                           <div className="w-10 h-10 rounded-lg bg-[#0e1a10] border border-outline-variant flex items-center justify-center text-primary">
-                            <span className="material-symbols-outlined">data_object</span>
+                            <span className="material-symbols-outlined">∏</span>
                           </div>
                           <span className="px-2 py-1 rounded bg-primary/10 border border-primary/20 text-primary font-code-sm text-code-sm text-[10px] uppercase tracking-wide">
                             {proj.status}

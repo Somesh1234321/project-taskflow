@@ -122,10 +122,10 @@ const Settings = () => {
     : 'U';
 
   const TABS = [
-    { id: 'profile', label: 'Profile', icon: 'manage_accounts' },
-    { id: 'security', label: 'Security', icon: 'lock' },
-    { id: 'notifications', label: 'Notifications', icon: 'notifications' },
-    { id: 'appearance', label: 'Appearance', icon: 'palette' },
+    { id: 'profile', label: 'Profile', icon: '' },
+    { id: 'security', label: 'Security', icon: '' },
+    { id: 'notifications', label: 'Notifications', icon: '' },
+    { id: 'appearance', label: 'Appearance', icon: '' },
   ];
 
   return (
@@ -171,7 +171,7 @@ const Settings = () => {
                 onClick={handleLogout}
                 className="flex items-center gap-2 px-4 py-2 rounded-lg text-error border border-error/30 hover:bg-error/10 transition-colors text-sm font-medium"
               >
-                <span className="material-symbols-outlined text-[17px]">logout</span>
+                <span className="material-symbols-outlined text-[17px]"></span>
                 Sign Out
               </button>
             </div>
@@ -414,7 +414,7 @@ const Settings = () => {
                 onClick={handleLogout}
                 className="px-4 py-2 rounded-lg text-error border border-error/40 hover:bg-error hover:text-white transition-all text-sm font-medium shrink-0 flex items-center gap-1.5"
               >
-                <span className="material-symbols-outlined text-[16px]">logout</span>
+                <span className="material-symbols-outlined text-[16px]"></span>
                 Sign Out
               </button>
             </div>

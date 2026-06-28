@@ -51,8 +51,8 @@ const Sidebar = ({ mobileOpen, setMobileOpen, onOpenNewProjectModal }) => {
           onClick={onOpenNewProjectModal}
           className="w-full bg-primary-container hover:bg-primary-fixed hover:shadow-[0_0_12px_rgba(16,185,129,0.3)] transition-all text-on-primary-container font-label-md text-label-md py-2.5 rounded-lg flex items-center justify-center gap-2 scale-95 active:scale-90"
         >
-          <span className="material-symbols-outlined text-sm font-bold">add</span>
-          New Project
+          <span className="material-symbols-outlined text-sm font-bold">add New Project</span>
+          
         </button>
       </div>
 
@@ -68,7 +68,7 @@ const Sidebar = ({ mobileOpen, setMobileOpen, onOpenNewProjectModal }) => {
             }`
           }
         >
-          <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>dashboard</span>
+          <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}></span>
           <span className="font-label-md text-label-md">Dashboard</span>
         </NavLink>
 
@@ -92,8 +92,8 @@ const Sidebar = ({ mobileOpen, setMobileOpen, onOpenNewProjectModal }) => {
                 }`
               }
             >
-              <span className="material-symbols-outlined text-[18px]">data_object</span>
-              <span className="truncate">{proj.title}</span>
+              <span className="material-symbols-outlined text-[18px]"></span>
+              <span className="truncate text-2xl border-black">↣{proj.title}</span>
             </NavLink>
           ))
         )}
@@ -108,8 +108,8 @@ const Sidebar = ({ mobileOpen, setMobileOpen, onOpenNewProjectModal }) => {
             }`
           }
         >
-          <span className="material-symbols-outlined">settings</span>
-          <span className="font-label-md text-label-md">Settings</span>
+          
+          <span className="font-label-md text-label-md ">Settings</span>
         </NavLink>
       </nav>
 

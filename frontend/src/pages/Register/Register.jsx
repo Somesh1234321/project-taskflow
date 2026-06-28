@@ -11,6 +11,8 @@ const Register = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
+ 
+
   const { register, login } = useAuth();
   const navigate = useNavigate();
 

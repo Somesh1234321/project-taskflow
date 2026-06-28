@@ -10,7 +10,7 @@ const COLUMNS = [
   {
     id: 'Todo',
     label: 'To Do',
-    icon: 'radio_button_unchecked',
+    icon: '',
     color: 'text-on-surface-variant',
     headerBg: 'bg-surface-container',
     dotColor: 'bg-on-surface-variant',
@@ -19,7 +19,7 @@ const COLUMNS = [
   {
     id: 'In Progress',
     label: 'In Progress',
-    icon: 'pending',
+    icon: '',
     color: 'text-secondary',
     headerBg: 'bg-secondary-container/20',
     dotColor: 'bg-secondary',
@@ -28,7 +28,7 @@ const COLUMNS = [
   {
     id: 'Review',
     label: 'Review',
-    icon: 'visibility',
+    icon: '',
     color: 'text-tertiary',
     headerBg: 'bg-tertiary-container/20',
     dotColor: 'bg-tertiary',
@@ -37,7 +37,7 @@ const COLUMNS = [
   {
     id: 'Done',
     label: 'Done',
-    icon: 'check_circle',
+    icon: '',
     color: 'text-primary',
     headerBg: 'bg-primary-container/20',
     dotColor: 'bg-primary',
@@ -46,9 +46,9 @@ const COLUMNS = [
 ];
 
 const PRIORITY_CONFIG = {
-  High: { label: 'High', icon: 'keyboard_double_arrow_up', color: 'text-error', bg: 'bg-error/10' },
-  Medium: { label: 'Medium', icon: 'drag_handle', color: 'text-secondary', bg: 'bg-secondary/10' },
-  Low: { label: 'Low', icon: 'keyboard_double_arrow_down', color: 'text-on-surface-variant', bg: 'bg-surface-variant/40' },
+  High: { label: 'High', icon: '', color: 'text-error', bg: 'bg-error/10' },
+  Medium: { label: 'Medium', icon: '', color: 'text-secondary', bg: 'bg-secondary/10' },
+  Low: { label: 'Low', icon: '', color: 'text-on-surface-variant', bg: 'bg-surface-variant/40' },
 };
 
 // ─────────────── TASK CARD ──────────────────────────────────────────────────
@@ -84,7 +84,7 @@ const TaskCard = ({ task, onOpenTask, onDragStart }) => {
           <span className="material-symbols-outlined text-[13px]">{p.icon}</span>
           {p.label}
         </span>
-        <span className="material-symbols-outlined text-[16px] text-on-surface-variant/40 group-hover:text-on-surface-variant/70 transition-colors">drag_indicator</span>
+        <span className="material-symbols-outlined text-[16px] text-on-surface-variant/40 group-hover:text-on-surface-variant/70 transition-colors"></span>
       </div>
 
       {/* Task title */}
@@ -108,7 +108,7 @@ const TaskCard = ({ task, onOpenTask, onDragStart }) => {
           </div>
         ) : (
           <div className="w-6 h-6 rounded-full bg-surface-variant border border-outline-variant flex items-center justify-center">
-            <span className="material-symbols-outlined text-[14px] text-on-surface-variant/40">person</span>
+            <span className="material-symbols-outlined text-[14px] text-on-surface-variant/40"></span>
           </div>
         )}
 
@@ -165,7 +165,7 @@ const KanbanColumn = ({ column, tasks, onOpenTask, onAddTask, onDragStart, onDra
           className="p-1 rounded-md text-on-surface-variant/50 hover:text-on-surface hover:bg-surface-container transition-colors"
           title={`Add task to ${column.label}`}
         >
-          <span className="material-symbols-outlined text-[18px]">add</span>
+          <span className="material-symbols-outlined text-[18px]">+</span>
         </button>
       </div>
 
@@ -209,7 +209,7 @@ const KanbanColumn = ({ column, tasks, onOpenTask, onAddTask, onDragStart, onDra
         onClick={() => onAddTask(column.id)}
         className="mt-3 w-full py-2.5 rounded-lg border border-dashed border-outline-variant/60 text-on-surface-variant/60 hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-200 text-xs font-medium flex items-center justify-center gap-1.5"
       >
-        <span className="material-symbols-outlined text-[15px]">add</span>
+        <span className="material-symbols-outlined text-[15px]">+</span>
         Add Task
       </button>
     </div>
@@ -413,7 +413,7 @@ const Project = () => {
         {/* Search */}
         <div className="relative flex-1 min-w-[180px] max-w-xs">
           <span className="material-symbols-outlined text-[16px] absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant/60">
-            search
+            🔍
           </span>
           <input
             type="text"
@@ -455,7 +455,7 @@ const Project = () => {
             onClick={() => openAddTask('Todo')}
             className="btn-primary px-4 py-2 rounded-lg text-sm font-semibold flex items-center gap-1.5"
           >
-            <span className="material-symbols-outlined text-[16px]">add_task</span>
+            <span className="material-symbols-outlined text-[16px]">+</span>
             New Task
           </button>
         </div>

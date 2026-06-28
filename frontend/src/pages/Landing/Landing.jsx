@@ -241,7 +241,7 @@ const Landing = () => {
               {/* Feature Card 1 */}
               <div className="bg-surface-container-low rounded-xl border border-outline-variant p-6 flex-1 flex flex-col justify-between hover:border-primary/50 transition-colors group">
                 <div>
-                  <span className="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">bolt</span>
+                  <span className="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">🔩</span>
                   <h3 className="font-headline-lg text-headline-lg text-on-surface mb-2 text-2xl">Automated Workflows</h3>
                   <p className="font-body-md text-body-md text-on-surface-variant">Trigger complex data pipelines and issue assignments with zero manual intervention.</p>
                 </div>
@@ -249,7 +249,7 @@ const Landing = () => {
               {/* Feature Card 2 */}
               <div className="bg-surface-container-low rounded-xl border border-outline-variant p-6 flex-1 flex flex-col justify-between hover:border-primary/50 transition-colors group">
                 <div>
-                  <span className="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">data_usage</span>
+                  <span className="material-symbols-outlined text-primary mb-4 text-3xl group-hover:scale-110 transition-transform">📊</span>
                   <h3 className="font-headline-lg text-headline-lg text-on-surface mb-2 text-2xl">Real-time Analytics</h3>
                   <p className="font-body-md text-body-md text-on-surface-variant">Monitor velocity, bottleneck metrics, and team bandwidth in a precise, dark-mode canvas.</p>
                 </div>
@@ -288,7 +288,7 @@ const Landing = () => {
           <li><a className="font-label-md text-label-md text-on-surface-variant hover:text-on-surface underline transition-opacity duration-200" href="#contact">Contact</a></li>
         </ul>
         <div className="font-body-md text-body-md text-on-surface-variant">
-          © 2024 TaskFlow AI. All rights reserved.
+          © 2026 TaskFlow AI. All rights reserved.
         </div>
       </footer>
     </div>
